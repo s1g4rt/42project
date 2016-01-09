@@ -6,13 +6,14 @@
 /*   By: dparbhoo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/11 19:53:10 by dparbhoo          #+#    #+#             */
-/*   Updated: 2015/12/11 20:01:12 by dparbhoo         ###   ########.fr       */
+/*   Updated: 2016/01/09 19:08:09 by dparbhoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_strcmp(const char *s1, const char *s2)
+int		ft_strcmp(const char *s1, const char *s2)
 {
 	int i;
+
 	i = 0;
 	while (s1[i] || s2[i])
 	{
@@ -21,4 +22,4 @@ void	ft_strcmp(const char *s1, const char *s2)
 		i++;
 	}
 	return (0);
-
+}

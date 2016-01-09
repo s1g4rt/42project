@@ -5,21 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dparbhoo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/11 20:05:37 by dparbhoo          #+#    #+#             */
-/*   Updated: 2015/12/11 20:06:01 by dparbhoo         ###   ########.fr       */
+/*   Created: 2016/01/09 18:40:09 by dparbhoo          #+#    #+#             */
+/*   Updated: 2016/01/09 19:01:00 by dparbhoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *strcpy(char *dest, const char *src)
+#include <string.h>
+
+char	 *ft_strcpy(char *s1,const char *s2)
 {
 	size_t n;
 
 	n = 0;
-	while(src[n] != '\0')
-	{
-		dest[n] = src[n];
+	while(s2[n] != '\0')
+	{	
+		s1[n] = s2[n];
 		n++;
 	}
-	dest[n]'\0';
-	return(dest);
-}	
+	s1[n] = '\0';
+	return(s1);
+}
