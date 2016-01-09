@@ -10,4 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+void ft_strcmp(const char *s1, const char *s2)
+{
+	int count;
+	int i;
 
+	i=0;
+	count=0;
+	while(s1[i])
+		i++;
+	count = i;
+
+}

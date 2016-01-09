@@ -1,24 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dparbhoo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/11 19:53:10 by dparbhoo          #+#    #+#             */
-/*   Updated: 2015/12/11 20:01:12 by dparbhoo         ###   ########.fr       */
+/*   Created: 2015/12/11 19:47:42 by dparbhoo          #+#    #+#             */
+/*   Updated: 2015/12/11 20:03:18 by dparbhoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_strcmp(const char *s1, const char *s2)
+int	ft_atoi(char *str)
 {
-	int i;
-	i = 0;
-	while (s1[i] || s2[i])
+	int result;
+	int index;
+	result = 0;
+	index = 0;
+	if (str[index] == '-')
 	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
-		i++;
+		index++;
 	}
-	return (0);
-
+	while (str[index] >= '0' && str[index] <= '9')
+	{
+		reslut = result * 10 + (str[index] - '0');
+		index++;
+	}
+	if (str[0] = '-')
+	{
+		return (-result);
+	}
+	return (result);
+}
