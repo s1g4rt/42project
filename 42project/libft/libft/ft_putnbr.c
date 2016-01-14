@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dparbhoo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/11 19:47:42 by dparbhoo          #+#    #+#             */
-/*   Updated: 2015/12/11 20:03:18 by dparbhoo         ###   ########.fr       */
+/*   Created: 2016/01/14 14:40:54 by dparbhoo          #+#    #+#             */
+/*   Updated: 2016/01/14 14:46:11 by dparbhoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+#include "libft.h"
+
+void	ft_putnbr(int n)
 {
-	int result;
-	int index;
-	result = 0;
-	index = 0;
-	if (str[index] == '-')
+	int power;
+
+	power = 1;
+	if (nb < 0)
 	{
-		index++;
+		ft_putchar('-');
+		n = -n;
 	}
-	while (str[index] >= '0' && str[index] <= '9')
+	while (power <= n)
 	{
-		reslut = result * 10 + (str[index] - '0');
-		index++;
+		power = power * 10;
 	}
-	if (str[0] = '-')
+	while (power >= 1)
 	{
-		return (-result);
+		ft_putchar(n / power + 48);
+		n = n % power;
+		power = power / 10;
 	}
-	return (result);
 }

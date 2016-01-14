@@ -1,34 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dparbhoo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/11 20:10:34 by dparbhoo          #+#    #+#             */
-/*   Updated: 2016/01/09 17:29:51 by dparbhoo         ###   ########.fr       */
+/*   Created: 2015/12/11 20:07:05 by dparbhoo          #+#    #+#             */
+/*   Updated: 2016/01/14 11:32:34 by dparbhoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strstr(char *str,char *to_find)
+int	ft_isascii(int c)
 {
-
-	int a;
-	int b;
-
-	a = 0;
-	while (str[a] != '\0')
-	{
-		b = 0;
-		while (to_find[b] == str[a])
-		{
-			if (to_find[b+1] == '\0')
-			{
-				return(str);
-			}
-			b++;
-		}
-		a++;
-	}
-	return(0);	
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }
