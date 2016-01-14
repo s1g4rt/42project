@@ -1,12 +1,12 @@
-#include <stdio.h>
-#include <string.h>
-
-char	*ft_strcpy(char *s1,const char *s2);
+#include <stdio.h> 
+#include <string.h> 
+char	*ft_strcpy(char *dest,const char *src);
 
 int	main()
 {
-	char *s1="Hello";
-	const char *s2="Bonjour";
-	printf("\n strcpy: %s\n",strcpy(s1, s2));
+	char *dest="EHelloee";
+	const char *src="Bonjour";
+	printf("\n ft_strcpy: %s\n", ft_strcpy(dest, src));
+	printf("\n strcpy: %s\n", strcpy(dest, src));
 	return(0);
 }

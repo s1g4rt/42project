@@ -6,9 +6,11 @@
 /*   By: dparbhoo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/09 18:40:09 by dparbhoo          #+#    #+#             */
-/*   Updated: 2016/01/14 16:11:21 by dparbhoo         ###   ########.fr       */
+/*   Updated: 2016/01/14 15:58:03 by dparbhoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 char	 *ft_strcpy(char *dest,const char *src)
 {

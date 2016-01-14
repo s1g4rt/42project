@@ -1,25 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dparbhoo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/01/09 18:40:09 by dparbhoo          #+#    #+#             */
-/*   Updated: 2016/01/14 16:11:21 by dparbhoo         ###   ########.fr       */
+/*   Created: 2016/01/14 16:47:27 by dparbhoo          #+#    #+#             */
+/*   Updated: 2016/01/14 16:48:45 by dparbhoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	 *ft_strcpy(char *dest,const char *src)
+char *ft_strrchr(const char *s, int c)
 {
-	int i;
-
-	i = 0;
-	while(src[i] != '\0')
-	{	
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return(dest);
+	return (0);
 }

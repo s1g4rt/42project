@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dparbhoo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/01/09 18:40:09 by dparbhoo          #+#    #+#             */
-/*   Updated: 2016/01/14 16:11:21 by dparbhoo         ###   ########.fr       */
+/*   Created: 2016/01/14 14:29:50 by dparbhoo          #+#    #+#             */
+/*   Updated: 2016/01/14 14:33:47 by dparbhoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	 *ft_strcpy(char *dest,const char *src)
-{
-	int i;
+#include "libft.h"
 
-	i = 0;
-	while(src[i] != '\0')
-	{	
-		dest[i] = src[i];
-		i++;
+void	ft_putstr(char *str)
+{
+	int count;
+
+	count = 0;
+	while (str[count])
+	{
+		ft_putchar(str[count]);
+		count++;
 	}
-	dest[i] = '\0';
-	return(dest);
 }

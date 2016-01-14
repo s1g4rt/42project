@@ -1,25 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dparbhoo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/01/09 18:40:09 by dparbhoo          #+#    #+#             */
-/*   Updated: 2016/01/14 16:11:21 by dparbhoo         ###   ########.fr       */
+/*   Created: 2016/01/14 16:24:50 by dparbhoo          #+#    #+#             */
+/*   Updated: 2016/01/14 16:26:22 by dparbhoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	 *ft_strcpy(char *dest,const char *src)
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 {
-	int i;
 
-	i = 0;
-	while(src[i] != '\0')
-	{	
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return(dest);
 }
